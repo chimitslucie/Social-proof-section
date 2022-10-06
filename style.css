@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+html,
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__content--text {
+  margin-right: 158px;
+  max-width: 412px;
+}
+
+.content__text--tittle {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: var(--very-dark-magenta);
+  max-width: 333px;
+  margin-bottom: 26px;
+}
+
+.content__text--text {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  letter-spacing: -0.63px;
+  color: var(--dark-grayish-magenta);
+}
+
+.statistics__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 32px 20px 32px;
+  background-color: var(--light-grayish-magenta);
+  border-radius: 8px;
+  max-width: 445px;
+  width: 100%;
+}
+
+.statistics__content:nth-child(2) {
+  margin-top: 16px;
+  margin-left: 48px;
+}
+
+.statistics__content:last-child {
+  margin-top: 16px;
+  margin-left: 95px;
+}
+
+.statistics__img {
+  max-width: 16.55px;
+  max-height: 15.77px;
+  margin-right: 8.45px;
+}
+
+.statistics__img:last-child {
+  margin-right: 0;
+}
+
+.statistics__text {
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--very-dark-magenta);
+  margin-left: 32.45px;
+}
+
+.card {
+  margin-top: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__notice {
+  background: var(--very-dark-magenta);
+  max-width: 350px;
+  max-height: 234px;
+  height: 100%;
+  width: 100%;
+  padding: 40px 32px 41px 32px;
+  border-radius: 8px;
+}
+
+.card__notice:nth-child(2) {
+  margin: 0 30px 0 30px;
+  position: relative;
+  top: 16px;
+}
+
+.card__notice:last-child {
+  position: relative;
+  top: 32px;
+}
+
+.card__notice--head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 31px;
+}
+
+.notice__head--img {
+  max-width: 40px;
+  border-radius: 100%;
+  margin-right: 23px;
+}
+
+.text__tittle {
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--white);
+}
+
+.text__text {
+  color: var(--soft-pink);
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 4px;
+}
+
+.notice__text {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 22px;
+  letter-spacing: -0.3px;
+}
+
+@media (max-width: 375px) {
+  .card__content {
+    flex-direction: column;
+  }
+
+  .card__content--text {
+    margin-right: 0;
+    max-width: 327px;
+    margin-bottom: 46px;
+  }
+
+  .content__text--tittle {
+    font-size: 40px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    text-align: center;
+    max-width: 327px;
+    margin-bottom: 21px;
+  }
+
+  .content__text--text {
+    text-align: center;
+  }
+
+  .card__content--statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .statistics__content {
+    flex-direction: column;
+    text-align: center;
+    max-width: 327px;
+    padding: 15px 55px 15px 55px;
+  }
+
+  .statistics__content:nth-child(2) {
+    margin-left: 0;
+    margin-top: 17px;
+  }
+
+  .statistics__content:last-child {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .statistics__content--img {
+    margin-bottom: 15.23px;
+  }
+
+  .statistics__text {
+    margin-left: 0;
+  }
+
+  .card {
+    margin-top: 49px;
+    flex-direction: column;
+  }
+
+  .card__notice:nth-child(2) {
+    margin: 16px auto 16px auto;
+    position: initial;
+    top: initial;
+  }
+
+  .card__notice:last-child {
+    margin-top: 0;
+    position: initial;
+    top: initial;
+  }
+}
